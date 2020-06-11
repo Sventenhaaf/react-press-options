@@ -1,4 +1,5 @@
 import * as React from 'react'
+// @ts-ignore
 import Sub from './SubComponent'
 
 interface Props {
