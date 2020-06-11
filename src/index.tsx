@@ -3,4 +3,8 @@ import * as ReactDom from 'react-dom'
 
 const ROOT = document.getElementById('root')
 
-ReactDom.render(<h1>Hello World</h1>, ROOT)
+ReactDom.render(
+  <div>
+    <h1>Hello World Hoidd</h1>
+  </div>, ROOT
+  )
