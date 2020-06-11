@@ -6,7 +6,7 @@ const ROOT = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <h1>Hello Worldzzz</h1>
+    <h1>Hello la die la</h1>
     <Component text="jashdgf" />
   </div>, ROOT
   )

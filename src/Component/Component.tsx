@@ -9,7 +9,7 @@ interface Props {
 const Component = ({text}: Props) => {
   return (
     <div>
-      <h2>COMPONENT: {text}</h2>
+      <h2>COMPONENT HIER ZO: {text}</h2>
       <div>
         <Sub str="str"/>
       </div>
