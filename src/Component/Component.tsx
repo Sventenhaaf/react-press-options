@@ -1,9 +1,17 @@
-import React from 'react'
+import * as React from 'react'
+import Sub from './SubComponent'
 
-const Component = () => {
+interface Props {
+  text: string
+}
+
+const Component = ({text}: Props) => {
   return (
     <div>
-      COMPONENT
+      <h2>COMPONENT: {text}</h2>
+      <div>
+        <Sub str="str"/>
+      </div>
     </div>
   )
 }

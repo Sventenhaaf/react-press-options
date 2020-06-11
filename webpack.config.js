@@ -12,6 +12,11 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader'
       }
     ]
   },
@@ -19,5 +24,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html'
     })
-  ]
+  ],
+  devtool: 'source-map',
+  resolve: {
+    extensions: [".js", ".ts", ".tsx"]
+  }
 }
