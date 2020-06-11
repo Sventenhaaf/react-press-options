@@ -1,12 +1,12 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
-import Component from './Component/Component'
+import Component from '../../src'
 
 const ROOT = document.getElementById('root')
 
 ReactDom.render(
   <div>
-    <h1>Hello World</h1>
+    <h1>Hello Worldzzz</h1>
     <Component text="jashdgf" />
   </div>, ROOT
   )
