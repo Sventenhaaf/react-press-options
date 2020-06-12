@@ -1,12 +1,12 @@
 {
   "name": "react-press-options",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Press and hold for options - release or mouseup on an option to select",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development",
     "transpile": "tsc --project tsconfig.json",
-    "build": "webpack --config webpack.config.js --mode=production"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

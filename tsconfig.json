@@ -4,6 +4,7 @@
     "jsx": "react",
     "module": "commonjs",
     "noImplicitAny": true,
+    "allowJs": true,
     "outDir": "./build",
     "preserveConstEnums": true,
     "removeComments": true,
