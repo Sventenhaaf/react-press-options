@@ -9,7 +9,8 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 const config = {
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
@@ -17,11 +18,12 @@ const config = {
         test: /\.tsx?$/,
         loader: 'ts-loader'
       },
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'source-map-loader'
-      },
+      // TODO: PUT BACK TO ENABLE SOURCE MAP
+      // {
+      //   enforce: 'pre',
+      //   test: /\.js$/,
+      //   loader: 'source-map-loader'
+      // },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -31,15 +33,15 @@ const config = {
       }
     ]
   },
-  
-  devtool: 'source-map',
+  // TODO: PUT BACK TO ENABLE SOURCE MAP
+  // devtool: 'source-map',
   resolve: {
     extensions: [".js", ".ts", ".tsx"]
   }
 }
 
-module.exports = (_, argv) => { // first argument is env
-  console.log('============= MODE:' , argv.mode, '======================')
+module.exports = (env, argv) => { // first argument is env
+  // console.log('===========>', env)
   if (argv.mode === 'development') {
     config.entry = path.join(__dirname, "examples/nodes/index.tsx")
     config.plugins = [htmlWebpackPlugin]
