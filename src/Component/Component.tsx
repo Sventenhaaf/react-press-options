@@ -6,12 +6,12 @@ interface Props {
   text: string
 }
 
-const Component = ({text}: Props) => {
+const Component = ({ text }: Props) => {
   return (
     <div>
-      <h2>COMPONENT HIER ZO: {text}</h2>
+      <h2>COMPONENT WITH CUSOMT TEXT: {text}</h2>
       <div>
-        <Sub str="str"/>
+        <Sub str="string rendered in .js file within component " />
       </div>
     </div>
   )

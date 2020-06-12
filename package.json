@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development",
+    "transpile": "tsc --project tsconfig.json",
     "build": "webpack --config webpack.config.js --mode=production"
   },
   "keywords": [],

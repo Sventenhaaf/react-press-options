@@ -10,7 +10,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    libraryTarget: 'commonjs'
+    // libraryTarget: 'commonjs'
   },
   module: {
     rules: [
@@ -47,6 +47,7 @@ module.exports = (env, argv) => { // first argument is env
     config.plugins = [htmlWebpackPlugin]
   } else if (argv.mode === 'production') {
     config.entry = path.join(__dirname, "src/index.ts") // TODO: set 'src/index.tsx' to config file and same as import in examples/index.tsx
+    // config.output.libraryTarget = 'umd'
   }
 
   return config
