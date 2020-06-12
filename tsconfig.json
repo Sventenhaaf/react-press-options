@@ -8,10 +8,10 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "sourceMap": true,
-    "target": "ES5"
+    "target": "ES5",
+    "declaration": true
   },
   "include": [
     "./src/**/*"
   ],
-  "declaration": true
 }

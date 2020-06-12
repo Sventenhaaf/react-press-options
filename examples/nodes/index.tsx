@@ -1,8 +1,8 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
 // NO @ts-ignore
-// import Component from '../../build/bundle'
-import Component from '../../src'
+import Component from '../../build/bundle'
+// import Component from '../../src'
 
 
 const ROOT = document.getElementById('root')
